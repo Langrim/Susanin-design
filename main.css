@@ -2,3 +2,135 @@ p {
     color: red;
     text-align: center
 }
+body
+{
+	padding: px;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 35px;
+  margin: 12px 10px 0px;
+  float: left;
+	border-radius: 22px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #e73c3c;
+	border-bottom: 5px solid #11ceb8;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+.black
+{
+	background-color: #000000;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+.wy
+{
+	background-color: #b100ff;
+	border-bottom: 5px solid #d214ff;
+	text-shadow: 0px -2px #D1B358;
+}
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+
+
+.slideshow-container {
+   max-width: 1000px;
+       position: relative;
+       margin: auto;
+       
+}
+.prev, .next {
+   cursor: pointer;
+    position: absolute;
+        top: 50%;
+    width: auto;
+    margin-top:  -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius:  3px 0 0 3px; 
+}
+.prev:hover, next:hover{
+    background-color: rgba(0,0,0,0.8)
+}
+.text {
+    color: aqua;
+    font-size:  12px;
+    padding:  8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.6s easy;   
+}
+.active, dot:hover{ 
+    background-color: #2308f0 ;
+}
+.fade{ 
+-webkit-animation-name:fade;
+    -webkit-animation-duration:1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;  
+}
+@-webkit-keyframes fade{
+    from{opacity: 4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: 4}
+    to{opacity: 1}
+}
